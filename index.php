@@ -1,11 +1,5 @@
 <?php
 
-	$maps_api="https://maps.googleapis.com/maps/api/";
-	$places_api="place/autocomplete/output?";
-	$parameters="";
-
-	$google_api_key="AIzaSyDmlFYh1-p2yeycfknEZmHyRsr0C4V--Yo";
-
 
 
 ?>
@@ -19,29 +13,46 @@
 	<title>REST API</title>
 </head>
 <body>
-	<form action="#">
-		<input type="text" name="location"></input>
-		<input type="submit"></input>
-	</form>
+<?php
 
-
-<br>
-
-<ul class="">
-  <li role="option" class="active"><a href="#">Home</a></li>
-  <li role="option"><a href="#">Profile</a></li>
-  <li role="option"><a href="#">Messages</a></li>
-</ul>
-
-<?php 
-	if(isset($_GET['location'])){
-		$data = file_get_contents("http://maps.googleapis.com/maps/api/geocode/json?address=".$_GET['location']);
-		$data_array = json_decode($data);
+	if(isset($_GET['num_dice'])){
+		for ($i=0; $i < $_GET['num_dice']; $i++) { 
+			$data_array["Dice #".$i] = mt_rand(1,6);
+		}
+		echo json_encode($data_array);
 	}
 
+	else if(isset($_GET['num_coin']) && !isset($_GET['bias_percent']) && !isset($_GET['bias_winner'])){
+		for ($i=0; $i < $_GET['num_coin']; $i++) { 
+			if(mt_rand(1,2)==1)
+				$data_array["Coin #".$i] = 'H';
+			else
+				$data_array["Coin #".$i] = 'T';
+		}
+		echo json_encode($data_array);
+	}
+
+	else if(isset($_GET['num_coin']) && isset($_GET['bias_percent']) && isset($_GET['bias_winner'])){
+		
+		if($_GET['bias_winner']==='H'){
+			$loser='T';
+		}
+		else{
+			$loser='H';
+		}
 
 
+		for ($i=0; $i < $_GET['num_coin']; $i++) { 
+			if(mt_rand(1,100)<=$_GET['bias_percent'])
+				$data_array["Coin #".$i] = $_GET['bias_winner'];
+			else
+				$data_array["Coin #".$i] = $loser;
+		}
+		echo json_encode($data_array);
+	}
 ?>
+
+	
 	
 	
 </body>
