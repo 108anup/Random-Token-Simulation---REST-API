@@ -1,13 +1,10 @@
 body {
 	background-color:#2D7E30 !important;
 	color:#FFFFFF; 
-	font-family: 'Bitstream Charter', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
-h1,h2 {
-	font-family: 'DejaVu', sans-serif;
-}
-h3,h4,h5,h6 {
-	font-family: 'Bitstream Charter', sans-serif;
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Roboto', sans-serif;
 }
 .jumbotron {
 	background-color:#2D7E30 !important; 
@@ -33,4 +30,13 @@ var {
 hr {
 	display: block;
 
+}
+.fa {
+	color:#FFFFFF !important;
+}
+.fa:hover{
+	color:#E6E6E6 !important;
+}
+.footer{
+	margin-bottom: 50px;
 }

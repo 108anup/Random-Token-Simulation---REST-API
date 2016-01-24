@@ -1,11 +1,4 @@
 <?php
-
-
-
-?>
-
-
-<?php
 	$display = true;
 
 	if(isset($_GET['num_dice'])){
@@ -50,4 +43,3 @@
 	if($display){
 		include 'mainbody.php';
 	}
-?>

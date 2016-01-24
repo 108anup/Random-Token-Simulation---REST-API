@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.css">
 	<script source="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<meta charset="UTF-8">
 
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
@@ -165,17 +166,20 @@
 				</div>
 		</div>
 
-	<footer class="text-center">
-		<div class="col-sm-offset-4col-sm-4">
-			<a href="http://facebook.com/108anup"><i class="fa fa-2x fa-facebook"></i></a>
-			<a href="https://plus.google.com/+108anup/"><i class="fa fa-2x fa-google-plus"></i></a>
-			<a href="http://twitter.com/108anup"><i class="fa fa-2x fa-twitter"></i></a>
+	<footer class="text-center footer">
+		<div class="col-sm-offset-4 col-sm-4">
+			<a href="http://facebook.com/108anup"><i class="fa fa-2x fa-facebook"></i></a>&ensp;&ensp;&ensp;
+			<a href="https://plus.google.com/+108anup/"><i class="fa fa-2x fa-google-plus"></i></a>&ensp;&ensp;&ensp;
+			<a href="http://twitter.com/108anup"><i class="fa fa-2x fa-twitter"></i></a>&ensp;&ensp;&ensp;
 			<a href="http://github.com/108anup"><i class="fa fa-2x fa-git"></i></a>
 		</div>
+
 		<div class="col-sm-offset-1 col-sm-10 text-center extras">
 			<hr>
 			Made By Anup Agarwal - (Last Update Jan 24, 2016)
 		</div>
 	</footer>
+	<br><br><br>
+
 </body>
 </html>
