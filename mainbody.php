@@ -18,7 +18,7 @@
 		</div>
 		
 		<div class="usage">
-
+			<img class="illus col-sm-offset-8" src="res/coin.png" alt="Dice" class="text-center" width="300px" height="200px">
 			<h2 class="text-center">Simulate A Coin</h2>
 
 				<div class="row">
@@ -92,8 +92,8 @@
 
 		<br><br><br>
 			</div>
-
-
+		
+		<img class="illus col-sm-offset-8" src="res/rollthedice.png" alt="Dice" class="text-center" width="200px" height="200px">
 		<h2 class="text-center">Simulate A Dice</h2>
 
 				<div class="row">

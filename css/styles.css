@@ -2,9 +2,11 @@ body {
 	background-color:#2D7E30 !important;
 	color:#FFFFFF; 
 	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
 }
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
 }
 .jumbotron {
 	background-color:#2D7E30 !important; 
@@ -39,4 +41,10 @@ hr {
 }
 .footer{
 	margin-bottom: 50px;
+}
+.illus{
+	position: absolute;
+	right:250px;
+	z-index: 2;
+	padding-bottom: 20px;
 }
