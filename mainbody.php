@@ -72,6 +72,9 @@
 
 				<br>
 				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2"><h3 class="response">Response:</h3></div>
+				</div>
+				<div class="row">
 					<pre class="col-sm-offset-2 col-sm-8">{
 	"Coin #1":"H",
 	"Coin #2":"T",
@@ -87,6 +90,9 @@
 				</div>	
 
 		<br><br><br>
+			</div>
+
+
 		<h2 class="text-center">Simulate A Dice</h2>
 
 				<div class="row">
@@ -141,6 +147,9 @@
 
 				<br>
 				<div class="row">
+					<div class="col-sm-8 col-sm-offset-2"><h3 class="response">Response:</h3></div>
+				</div>
+				<div class="row">
 					<pre class="col-sm-offset-2 col-sm-8">{
 	"Dice #1":4,
 	"Dice #2":2,
@@ -155,5 +164,18 @@
 }</pre>
 				</div>
 		</div>
+
+	<footer class="text-center">
+		<div class="col-sm-offset-4col-sm-4">
+			<a href="http://facebook.com/108anup"><i class="fa fa-2x fa-facebook"></i></a>
+			<a href="https://plus.google.com/+108anup/"><i class="fa fa-2x fa-google-plus"></i></a>
+			<a href="http://twitter.com/108anup"><i class="fa fa-2x fa-twitter"></i></a>
+			<a href="http://github.com/108anup"><i class="fa fa-2x fa-git"></i></a>
+		</div>
+		<div class="col-sm-offset-1 col-sm-10 text-center extras">
+			<hr>
+			Made By Anup Agarwal - (Last Update Jan 24, 2016)
+		</div>
+	</footer>
 </body>
 </html>
